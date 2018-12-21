@@ -467,6 +467,7 @@ p.bookmark{
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr;
+   margin-bottom: 25px;
 }
 .bkDetailsContent article{
     letter-spacing: 0.1px;
@@ -486,4 +487,17 @@ p.bookmark{
 }
 .aTB{
     margin: 10px 15px;
+}
+.discoverHeader .search {
+    position: relative;
+}
+.discoverHeader  .search input {
+    text-indent: 30px;
+    padding: 10px 20px 10px 5px;
+}
+.discoverHeader  .search .fa-search { 
+  position: absolute;
+  top: 12px;
+  left: 7px;
+  font-size: 15px;
 }
