@@ -5,6 +5,9 @@ button, a{
 body{
     font-family:Helvetica;
 }
+input:focus{
+    outline: none;
+}
 
 /*splashScreen*/
 
@@ -488,16 +491,73 @@ p.bookmark{
 .aTB{
     margin: 10px 15px;
 }
+
+/*Discover Page*/
+
 .discoverHeader .search {
     position: relative;
+    max-width: 500px;
+    margin: auto;
 }
 .discoverHeader  .search input {
     text-indent: 30px;
-    padding: 10px 20px 10px 5px;
+    padding: 15px 20px 15px 5px;
+    width: 90%;
+    background: #e9eaf3;
+    border: none;
+    border-radius: 15px;
 }
 .discoverHeader  .search .fa-search { 
   position: absolute;
-  top: 12px;
+  top: 15px;
   left: 7px;
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.discoverSlider{
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+}
+.discoverSlider::-webkit-scrollbar{
+    display: none
+}
+.discoverSlider>div{
+    display: inline-block;
+}
+.discoverSlide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 210px;
+    width: 400px;
+    background: rgba(46, 169, 223);
+    grid-gap: 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    
+}
+.discoverSlide>div{
+    justify-self: start;
+    align-self: center;
+}
+.discoverSlide>img{
+    justify-self: end
+}
+.disAuthor{
+    color: rgba(255, 255, 255, 0.6);
+}
+.disTitle{
+    color: rgba(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+.disOther{
+    color: rgb(52, 63, 143)
+}
+.seeMore1{
+    align-self: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 3px;
 }
