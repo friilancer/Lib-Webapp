@@ -1,5 +1,5 @@
 /*general*/
-button, a{
+a{
     cursor: pointer;
 }
 body{
@@ -560,4 +560,63 @@ p.bookmark{
     font-weight: bold;
     color: rgb(0, 0, 0);
     margin-top: 3px;
+}
+
+/* Reading Page */
+.readingPg{
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+.readingPgHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px 0px;
+    background: black;
+    color: white;
+    align-items: center;
+}
+.rph1, .rph3{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+.rph2{
+    justify-self: center;
+    color: #B4C1C7;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: bold;
+}
+.rph2 button{
+    font-weight: bold;
+    color: #B4C1C7;
+    background: black;
+    box-sizing: border-box;
+    padding: 0.5vw 3vw;
+    border: 1px solid rgba(255, 255, 255, 0.4);    
+}
+.rph2 button:focus{
+    outline: none;
+}
+.rph3{
+    justify-self: end;
+}
+.readingPg article{
+    box-sizing: border-box;
+    margin: 20px 0px;
+    padding: 0px 30px;
+}
+.readingPg article p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.rpgBottom{
+    background: black;
+}
+.rpgBottom img{
+    display: block;
+    margin: auto;
 }
